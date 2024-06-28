@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+	</head>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		*, *:before, *:after {
+			box-sizing: inherit;
+		}
+
+		body {
+			width: 100%;
+			max-width: 1120px;
+			margin: 0 auto;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		tr {
+			height: 2em;
+			page-break-inside: avoid;
+		}
+
+		td {
+			padding: 5px;
+		}
+
+		table.fixed {
+			table-layout: fixed;
+		}
+
+		table.border {
+			border: 1px solid black;
+		}
+
+		table.border td {
+			border: 1px solid black;
+		}
+
+		.flex {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		.col {
+			width: 0;
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			-moz-box-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+		}
+
+		.float-left {
+			float: left;
+		}
+
+		.float-right {
+			float: right;
+		}
+
+		.clearfix::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.mt-sm {
+			margin-top: 8px;
+		}
+
+		.mt-md {
+			margin-top: 18px;
+		}
+
+		.mt-lg {
+			margin-top: 30px;
+		}
+
+		.ml-sm {
+			margin-left: 8px;
+		}
+
+		.ml-lg {
+			margin-left: 30px;
+		}
+
+		.mr-sm {
+			margin-right: 8px;
+		}
+
+		.pa-sm {
+			padding: 10px;
+		}
+
+		.bg-primary {
+			background-color: #039099;
+		}
+
+		.full-width {
+			width: 100%;
+		}
+
+		.text-center {
+			text-align: center;
+		}
+
+		.text-white {
+			color: #fff;
+		}
+
+		.text-primary {
+			color: #039099;
+		}
+
+		.text-bold {
+			font-weight: bold;
+		}
+
+		.text-underline {
+			text-decoration: underline;
+		}
+
+		.text-title {
+			font-size: 2rem;
+		}
+
+		.text-body {
+			font-size: 0.875rem;
+		}
+
+		.inline-block {
+			display: inline-block;
+		}
+
+		.vertical-top {
+			vertical-align: top;
+		}
+
+		.vertical-center {
+			vertical-align: middle;
+		}
+
+		.border-right {
+			border-right: 2px solid black;
+		}
+	</style>
+	<body>
+		<header>
+			<div class="clearfix">
+				<div class="float-left" style="width: 60%">
+					<div class="text-title text-bold">QUOTATION 報價單</div>
+
+					<table class="full-width border mt-md">
+						<tr>
+							<td>Enquiry Date 查詢日期 : 2021-12-29</td>
+						</tr>
+						<tr>
+							<td>Quotation Ref 報價單編號 : QI-21120003</td>
+						</tr>
+						<tr>
+							<td>Customer Name 客戶名稱 :</td>
+						</tr>
+						<tr>
+							<td>Customer Contact No. 客戶電話 :</td>
+						</tr>
+						<tr>
+							<td>Customer Email 客戶電郵 :</td>
+						</tr>
+						<tr>
+							<td>Staff ID 跟進職員 : trunkadmin</td>
+						</tr>
+						<tr>
+							<td>Expected Move-in Date 預計入倉日期 : 2022-01-01</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="float-right">
+					<div style="padding: 40px 40px 0 0">
+						<img src="../logo.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="mt-lg">
+				Thank you for considering us as your trunk room away from home! At Trunk
+				Room, we are dedicated to create an "extension of your home" experience
+				for our customers and we hope you have just enjoyed walking around
+				additional rooms of your home! We know it is sometimes difficult to
+				remember so much detail, so we have prepared a little recap for you,
+				just in case you would find it useful! Just make yourself home here and
+				feel free to let us know any of your needs or situation and we will take
+				care the rest for you.
+			</div>
+
+			<div class="mt-lg">
+				感謝閣下考慮使用存家寳的儲存服務！存家寳致力於爲客戶打造一個 “家的延伸”
+				的體驗，希望把迷你倉變成您家中的儲物房一樣。相信剛才您已經參觀過幾個您家中新的儲物房，我們亦知道剛才提及過的資料及細節比較難清楚記住，所以我們貼心地為您準備了一些摘要資料，以供您參考及記錄！另外，如果您有任何要求或遇到儲存上的難題，歡迎隨時告訴我們，我們將竭力為您解決。
+			</div>
+
+			<div class="mt-lg">
+				<table class="full-width border text-center">
+					<tr class="bg-primary text-white">
+						<td>Unit No.<br />倉號碼</td>
+						<td>Net Area^(sqft)<br />實用面積^(平方尺)</td>
+						<td>Dimension (D' x W' x H')<br />尺寸^(深'×寬'×高')</td>
+						<td>License Fee<br />許可費用</td>
+						<td>Prepayment<br />預繳(月)</td>
+						<td>Discount<br />折扣</td>
+						<td>Total<br />總租金</td>
+						<td>Remarks<br />備注</td>
+					</tr>
+					<tr>
+						<td>ISH-0403</td>
+						<td>16</td>
+						<td></td>
+						<td>$1,720.0</td>
+						<td>1</td>
+						<td>$0.0</td>
+						<td>$1,720.0</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ISH-0403</td>
+						<td>16</td>
+						<td></td>
+						<td>$1,720.0</td>
+						<td>1</td>
+						<td>$0.0</td>
+						<td>$1,720.0</td>
+						<td></td>
+					</tr>
+				</table>
+
+				<div class="text-body ml-sm">
+					<div>
+						^Areas and Dimensions maybe deviated from actual figures and information
+						quoted above are for reference only.
+					</div>
+					<div>
+						^面積及尺寸或與實際數字有偏差，以上資料僅供參考。
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-lg">
+				<div>
+					To make your storage experience a smooth one, we have sourced some packing
+					supplies for you:
+				</div>
+				<div>
+					爲了使您有一個順暢的儲存體驗，我們特意為您找來不同的包裝物品供您選購：
+				</div>
+
+				<table class="full-width border text-center mt-sm">
+					<tr class="bg-primary text-white">
+						<td>Product 產品</td>
+						<td colspan="4">Content 内容</td>
+						<td>Unit Price 單價</td>
+					</tr>
+
+					<tr>
+						<td rowspan="5">Carton Box<br>紙箱</td>
+						<td>Document Box ⽂件箱</td>
+						<td rowspan="5">Size:<br>尺⼨:</td>
+						<td colspan="2">17" x 13.5" x 11"</td>
+						<td>HK$18</td>
+					</tr>
+
+					<tr>
+						<td>Small ⼩</td>
+						<td colspan="2">15.5" x 14" x 10.5"</td>
+						<td>HK$15</td>
+					</tr>
+
+					<tr>
+						<td>Medium 中</td>
+						<td colspan="2">16" x 16.5" x 17.5"</td>
+						<td>HK$18</td>
+					</tr>
+
+					<tr>
+						<td>Large ⼤</td>
+						<td colspan="2">24" x 21.5" x 24"</td>
+						<td>HK$25</td>
+					</tr>
+
+					<tr>
+						<td>Wardrobe Box 掛⾐箱</td>
+						<td colspan="2">26" x 19.7" x 43.3"</td>
+						<td>HK$70</td>
+					</tr>
+
+					<tr>
+						<td>Lock ⾨鎖</td>
+						<td colspan="4">Trunk Room Combination Lock 存家寶密碼鎖</td>
+						<td>HK$50</td>
+					</tr>
+
+					<tr>
+						<td>Packing Tape<br>封箱膠紙</td>
+						<td colspan="4">
+							Trunk Room Transparent Packing Tape 存家寶透明封箱膠紙<br>(Width寬:6cm x
+							Length⻑:91.5m)
+						</td>
+						<td>HK$15</td>
+					</tr>
+
+					<tr>
+						<td rowspan="2">Storage Rack<br>貨架</td>
+						<td colspan="3">Set Up Charge 設置費⽤</td>
+						<td>(Per Instance 每次:)</td>
+						<td>HK$50</td>
+					</tr>
+
+					<tr>
+						<td colspan="3">Rental 租⾦</td>
+						<td>(Per Month 每⽉:)</td>
+						<td>HK$20</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="mt-lg">
+				<table class="full-width text-body">
+					<tr>
+						<td class="vertical-top"></td>
+						<td>
+							<span class="text-bold text-underline">Notes to Customers 客戶須知：</span>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="vertical-top">1</td>
+						<td>
+							<div>
+								You will be required to provide the following documents for
+								registration and to complete the payment process on or before the
+								commencement date of the license period:
+							</div>
+							<div>
+								新登記之客戶需於許可期起始日或之前提交以下文件辦理登記手續及完成付款程序：
+							</div>
+							<div class="text-bold flex">
+								<div class="mr-sm">-</div>
+								<div class="col">
+									Personal Registration 個人登記： Valid identification documents
+									and
+									valid proof of address in Hong Kong issued within the last 3
+									months
+									有效身份證明文件及最近3個月之本港有效住址
+								</div>
+							</div>
+							<div class="text-bold flex">
+								<div class="mr-sm">-</div>
+								<div class="col">
+									Company Registration 公司登 Valid local business registration
+									certificate and company chop 有效的本地商業登記證及公司印章
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="vertical-top">2</td>
+						<td>
+							<div>
+								A deposit equivalent to 2 months of listed License Fee will also be
+								collected from you during the registration process.
+							</div>
+							<div>
+								相等於2個月「許可費用」的按金會在客戶辦理登記手續時一併收取。
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="vertical-top">3</td>
+						<td>
+							<div>
+								We accept payment by cash, cheque and direct bank transfer.
+							</div>
+							<div>
+								我們接受客戶以現金，支票或銀行轉帳方式付款。
+							</div>
+							<div class="flex">
+								<div class="mr-sm">(a)</div>
+								<div class="col">
+									<div>
+										If you wish to pay by cheque, please make sure the cheque is
+										properly crossed and made payable to
+										"<span class="text-bold">TRUNK ROOM LIMITED</span>".
+									</div>
+									<div>
+										如客戶選擇以支票方式付款，請確保支票須加劃線並註明支付「<span
+										class="text-bold"
+									>存家寶有限公司</span>」。
+									</div>
+								</div>
+							</div>
+							<div class="flex">
+								<div class="mr-sm">(b)</div>
+								<div class="col">
+									<div>
+										If you wish to pay by direct bank transfer, please transfer
+										the
+										relevant amount into one of the following bank accounts:
+									</div>
+									<div>
+										如客戶選擇以銀行轉帳方式付款，請將相關款項轉帳至以下其中一個銀行戶口：
+									</div>
+								</div>
+							</div>
+							<div class="text-bold" style="text-indent: 8em">
+								- Hang Seng Bank 恒生銀行: 024-395-503972-001
+							</div>
+							<div class="text-bold" style="text-indent: 4em">
+								- Bank of Communications 交通銀行: 027-841-1002876-02
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="vertical-top">4</td>
+						<td>
+							<div class="flex">
+								<div class="mr-sm">(a)</div>
+								<div class="col">
+									<div>
+										We will provide Smart Card(s) for you to gain 24-hour access
+										to
+										the Premises within the license period at a non-refundable
+										fee of
+										$50 and a refundable deposit of $100 per card.
+									</div>
+									<div>
+										我們會為客戶提供智能卡以方便閣下在許可期内24小時出入，而每張智能卡均須收取$50不可退還之費用及$100可退還之按金。
+									</div>
+								</div>
+
+							</div>
+							<div class="flex">
+								<div class="mr-sm">(b)</div>
+								<div class="col">
+									<div>
+										Alternatively, upon your request, we could register free of
+										charge a maximum of two 2 Smart Cards provided by you for
+										the same
+										purpose, subject to compatibilty of your Smart Card with
+										Registration of the third Smart Card and thereafter provided
+										by you
+										will be subject to a non-refeundable registration fee of $30
+										per
+										card. In any case, we will not be responsible for any loss
+										and damages
+										suffered by
+										you resulting from such registration and/or use.
+									</div>
+									<div>
+										除此以外，在客戶的要求及我們的系統相容下，我們可能為客戶免費註冊最多2張由客戶提供的智能卡以作24小時出入之用，而第3張及其後每張由客戶所提供的智能卡將會被收取$30不可退還的註但在任何情況下，我們對於客戶因註冊和/或使用此智能卡時而遭受的任何損失和損害概不負責。
+									</div>
+								</div>
+							</div>
+							<div class="flex">
+								<div class="mr-sm">(c)</div>
+								<div class="col">
+									<div>
+										The maximum number of Smart Cards that you can purchase
+										and/or
+										register will be subject to the type of storage unit you are
+										using.
+									</div>
+									<div>
+										客戶最多可購買和/或註冊的智能卡數量將因應閣下所使用的儲存單位而有所不同。
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="vertical-top">5</td>
+						<td>
+							<div>
+								The quotation is valid for 30 days and the prepayment discount plans
+								cannot be used in conjunction with each other.
+							</div>
+							<div>
+								報價單有效期為30天，預繳優惠計劃不能同時使用。
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="vertical-top">6</td>
+						<td>
+							<div>
+								The offer above applies to new customers only.
+							</div>
+							<div>
+								以上優惠只適用於新登記之客戶。
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="vertical-top">7</td>
+						<td>
+							<div>
+								Trunk Room reserves the right to make changes or amendments to the
+								above offer and information from time to time without any prior
+								notice. In case of dispute, Trunk Room reserves the right of final
+								decision on all matters.
+							</div>
+							<div>
+								存家寶保留修改以上優惠及資料的權利而毋須另行通知。如有任何爭議，存家寶保留最終決定權。
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</main>
+
+		<footer>
+			<div class="mt-lg">
+				<table class="full-width">
+					<colgroup>
+						<col width="340" />
+						<col />
+						<col width="150" />
+					</colgroup>
+					<tr>
+						<td class="border-right">
+							<div class="text-bold">
+								<span class="text-primary">Trunk Room Limited</span> |
+								<span class="text-primary">存家寳有限公司</span>
+							</div>
+							<div class="mt-md">
+								<div>
+									Unit 01-11，12/F，Oceanic Industrial Centre，2 Lee Lok
+									Street，Ap Lei Chau，Hong Kong
+								</div>
+								<div>
+									香港鴨脷洲利樂街2號灣工業貿易中心12樓01-11室
+								</div>
+							</div>
+						</td>
+						<td class="border-right text-center">
+							<div class="inline-block pa-sm">
+								<img
+									class="inline-block vertical-center"
+									style="width: 18px"
+									src="../order/agreement/image/whatsapp.jpg"
+									alt=""
+								>
+								<span class="text-primary">+852 9778 3278</span>
+							</div>
+
+							<div class="inline-block pa-sm">
+								<img
+									class="inline-block vertical-center"
+									style="width: 26px"
+									src="../order/agreement/image/phone.jpg"
+									alt=""
+								>
+								<span class="text-primary">+852 2778 6708</span>
+							</div>
+
+							<div class="inline-block pa-sm">
+								<img
+									class="inline-block vertical-center"
+									style="width: 22px"
+									src="../order/agreement/image/fax.jpg"
+									alt=""
+								>
+								<span class="text-primary">+852 2778 2308</span>
+							</div>
+
+							<div class="inline-block pa-sm">
+								<img
+									class="inline-block vertical-center"
+									style="width: 24px"
+									src="../order/agreement/image/email.jpg"
+									alt=""
+								>
+								<span class="text-primary">ask@trunkroom.com.hk</span>
+							</div>
+
+							<div class="inline-block pa-sm">
+								<img
+									class="inline-block vertical-center"
+									style="width: 24px"
+									src="../order/agreement/image/root.jpg"
+									alt=""
+								>
+								<span class="text-primary">www.trunkroom.com.hk</span>
+							</div>
+						</td>
+						<td class="text-center">
+							<img
+								class="inline-block"
+								style="width: 100px"
+								src="../order/agreement/image/ssaa.jpg"
+							/>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</footer>
+	</body>
+</html>

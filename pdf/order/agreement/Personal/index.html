@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      body {
+        max-width: 1110px;
+        margin: auto;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      table tr td {
+        padding: 5px 10px;
+      }
+
+      table.border tr td {
+        border: 1px solid black;
+      }
+
+      table.border-none tr td {
+        border: none;
+      }
+
+      .border-top {
+        border-top: 2px solid black;
+      }
+
+      .border-bottom {
+        border-bottom: 2px solid black;
+      }
+
+      .border-right {
+        border-right: 2px solid black;
+      }
+
+      .border-dashed-bottom {
+        border-bottom: 2px dashed black;
+      }
+
+      .mt-sm {
+        margin-top: 10px;
+      }
+
+      .mt-md {
+        margin-top: 20px;
+      }
+
+      .mt-lg {
+        margin-top: 40px;
+      }
+
+      .ml-md {
+        margin-left: 20px;
+      }
+
+      .mr-md {
+        margin-right: 20px;
+      }
+
+      .ma-md {
+        margin: 20px;
+      }
+
+      .no-padding {
+        padding: 0;
+      }
+
+      .no-padding-x {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .pa-md {
+        padding: 20px;
+      }
+
+      .px-md {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .px-lg {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      .pl-md {
+        padding-left: 20px;
+      }
+
+      .vertical-middle {
+        vertical-align: middle;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-left {
+        text-align: left;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .text-bold {
+        font-weight: bold;
+      }
+
+      .text-italic {
+        font-style: italic;
+      }
+
+      .text-subtitle {
+        color: gray;
+        font-size: 14px;
+      }
+
+      .text-small {
+        font-size: 14px;
+      }
+
+      .text-underline {
+        text-decoration: underline;
+      }
+
+      .text-nowrap {
+        white-space: nowrap;
+      }
+
+      .bg-primary {
+        background-color: #039099;
+      }
+
+      .text-primary {
+        color: #039099;
+      }
+
+      .bg-gray {
+        background-color: rgb(212, 212, 212);
+      }
+
+      .text-white {
+        color: #fff;
+      }
+
+      .float-left {
+        float: left;
+      }
+
+      .float-right {
+        float: right;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .header .title {
+        color: rgb(61, 61, 61);
+        font-size: 14px;
+      }
+
+      .footer table tr td {
+        padding: 0 10px;
+      }
+
+      .footer .icon {
+        vertical-align: middle;
+      }
+
+      .footer .center > div {
+        display: inline-block;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header clearfix">
+      <div class="float-left" style="width: 70%">
+        <p class="title mt-lg">revision 202007 (Ind)</p>
+
+        <table class="mt-sm text-bold" style="width: auto">
+          <tbody>
+            <tr>
+              <td class="no-padding">Agreement No. 協議號碼 ：</td>
+              <td class="bg-gray">AITH-</td>
+            </tr>
+            <tr>
+              <td class="no-padding">Agreement Date 日期 ：</td>
+              <td class="border-dashed-bottom">DD/ MM/ YYYY</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="float-right" style="width: 30%">
+        <div class="ml-md">
+          <a href="" class="logo">
+            <img src="../../../logo.jpg" style="width: 200px" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h3 class="text-center">許可協議登記表格</h3>
+      <h3 class="text-center text-underline">
+        LICENSE AGREEMENT REGISTRATION FORM
+      </h3>
+
+      <div class="mt-md">
+        <p style="line-height: 32px">
+          Between 訂約方:
+          <span class="border-dashed-bottom px-lg text-bold">
+            Trunk Room Limited 存家寶有限公司
+          </span>
+          （“Licensor”），and（「許可方」），及 Abbr
+          <span class="border-dashed-bottom px-lg">Input Surname</span>
+          <span class="border-dashed-bottom px-lg ml-md"
+            >Input Other Names</span
+          >
+          （“Licensee”）
+          <span class="border-dashed-bottom px-lg">姓名</span>
+          稱謂 （「獲許可方」）
+        </p>
+      </div>
+
+      <div class="mt-lg">
+        <h4 class="text-primary">1. LICENSEE’S PARTICULARS 獲許可方資料</h4>
+
+        <table class="mt-sm">
+          <colgroup>
+            <col width="100" />
+            <!-- <col />
+            <col width="200" />
+            <col />
+            <col width="124" />
+            <col />
+            <col width="240" /> -->
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>Client ID<br />客戶編號:</td>
+              <td class="bg-gray text-center text-bold">CI- I</td>
+              <td class="text-right">HKID No.<br />香港身份證號碼:</td>
+              <td colspan="2" class="border-dashed-bottom text-center">
+                xxxxxx
+              </td>
+              <td class="border-right"></td>
+              <td rowspan="3" class="text-center">
+                <div>
+                  <input type="checkbox" />
+                  <label class="text-underline">ID Verified 已核實身份證</label>
+                </div>
+                <div class="mt-md">
+                  <input type="checkbox" />
+                  <label class="text-underline"
+                    >Address Proof Provided<br />已提供住址證明</label
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2">Address<br />地址:</td>
+              <td colspan="4" class="border-dashed-bottom text-center">
+                地址1
+              </td>
+              <td class="text-subtitle border-right">(Address Line 1)</td>
+            </tr>
+            <tr>
+              <td colspan="4" class="border-dashed-bottom text-center">
+                地址2
+              </td>
+              <td class="text-subtitle border-right">(Address Line 1)</td>
+            </tr>
+            <tr>
+              <td>Mobile<br />手提電話:</td>
+              <td class="border-dashed-bottom text-center">xxx</td>
+              <td class="text-right">Office/Home <br />辦公室/住宅電話:</td>
+              <td class="border-dashed-bottom text-center">xxx</td>
+              <td class="text-right">Email 電郵:</td>
+              <td colspan="2" class="border-dashed-bottom text-center">
+                xxxxx
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="mt-md text-underline">
+          Alternate Contact Person of Licensee 獲許可方替補聯絡人:
+        </p>
+
+        <table class="mt-sm">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td>Abbr</td>
+              <td></td>
+              <td class="border-dashed-bottom text-center text-nowrap">
+                Input Surname
+              </td>
+              <td></td>
+              <td class="text-center border-dashed-bottom text-nowrap">
+                Input Other Names
+              </td>
+              <td>(“Alternate Contact Person”)</td>
+              <td class="text-center border-dashed-bottom">姓名</td>
+              <td colspan="2">稱謂&nbsp;&nbsp;&nbsp; (「替補聯絡人」)</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Address 地址:</td>
+              <td colspan="5" class="border-dashed-bottom text-center">
+                地址1
+              </td>
+              <td class="text-subtitle border-right">(Address Line 1)</td>
+              <td
+                colspan="2"
+                rowspan="2"
+                class="text-center border-dashed-bottom"
+              >
+                HKID No.<br /><span class="text-nowrap">香港身份證號碼:</span
+                ><br />
+                xxx
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5" class="border-dashed-bottom text-center">
+                地址2
+              </td>
+              <td class="text-subtitle border-right">(Address Line 2)</td>
+            </tr>
+            <tr>
+              <td>Mobile<br /><span>手提電話:</span></td>
+              <td colspan="2" class="border-dashed-bottom text-center">xxx</td>
+              <td class="text-center">
+                Office/Home<br /><span class="text-nowrap"
+                  >辦公室/住宅電話:</span
+                >
+              </td>
+              <td class="border-dashed-bottom text-center">xxx</td>
+              <td class="text-right">Email 電郵:</td>
+              <td colspan="3" class="border-dashed-bottom text-center">xxx</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="mt-sm text-small">
+          Please notify us immediately if there is any change of your contact
+          details or those of your alternate contact person.
+          <br />
+          如閣下或閣下的替補聯絡人的聯絡資料有任何變更，請立即通知我們。
+        </p>
+      </div>
+
+      <div class="mt-lg">
+        <h4 class="text-primary">2. STORAGE DETAILS 存倉資料</h4>
+
+        <table class="mt-sm">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td>Storage Unit:<br />貯存單位:</td>
+              <td class="text-center bg-gray text-bold">No. ISH - RowNo.</td>
+              <td>Premises:<br />物業:</td>
+              <td colspan="4" class="border-dashed-bottom">
+                Unit 02, 3/F, Block A, Sea View Estate, 2-8 Watson Road, Tin
+                Hau, Hong Kong <br />
+                香港天后屈臣道2-8號海景大廈 A座3樓02室
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">Initial License Period<br />初始許可期:</td>
+              <td class="text-right">From由</td>
+              <td class="border-dashed-bottom">DD/ MM/ YYYY</td>
+              <td class="text-right">To至</td>
+              <td class="border-dashed-bottom">DD/ MM/ YYYY</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                And thereafter on monthly basis unless and until further agreed
+                between the parties or being terminated pursuant to the terms of
+                this Agreement.
+                <br />
+                此後按月續期，除非及直至雙方另有協議或根據本協議的條款終止本協議。
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <colgroup>
+            <col width="40%" />
+            <col width="50" />
+            <col />
+            <col width="50" />
+            <col />
+            <col width="50" />
+            <col />
+            <col width="50" />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td rowspan="2">
+                Agreed Smart Card No. for Registration:<br />獲許可方同意註冊之智能卡號碼:
+              </td>
+              <td class="text-center">(1)</td>
+              <td class="border-dashed-bottom"></td>
+              <td class="text-center">(3)</td>
+              <td class="border-dashed-bottom"></td>
+              <td class="text-center">(5)</td>
+              <td class="border-dashed-bottom"></td>
+              <td class="text-center">CP:</td>
+              <td class="border-dashed-bottom"></td>
+            </tr>
+            <tr>
+              <td class="text-center">(2)</td>
+              <td class="border-dashed-bottom"></td>
+              <td class="text-center">(4)</td>
+              <td class="border-dashed-bottom"></td>
+              <td class="text-center">(6)</td>
+              <td class="border-dashed-bottom"></td>
+              <td class="text-center">CA:</td>
+              <td class="border-dashed-bottom"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-lg">
+        <h4 class="text-primary">3. FEES費用</h4>
+
+        <table class="mt-sm">
+          <tbody>
+            <tr>
+              <td>License Fee^<br />許可費用^:</td>
+              <td class="border-dashed-bottom text-nowrap">$</td>
+              <td>/month月</td>
+              <td>Late Payment Fee<br />遲繳罰金:</td>
+              <td class="border-dashed-bottom">
+                5% of total amount overdue 總欠款的5%
+              </td>
+            </tr>
+            <tr>
+              <td>Smart Card Fee*<br />智能卡費用*:</td>
+              <td class="border-dashed-bottom text-nowrap">$ 150</td>
+              <td>/card 張</td>
+              <td>Administrative Fee<br />行政費:</td>
+              <td class="border-dashed-bottom">
+                Up to $200 per instance of late payment每次遲繳最多$200
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5" class="text-italic">
+                ^to be paid in the manner as specified in the Debit Note<br />^根據付款通知書所列明之方式付款
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5" class="text-italic">
+                *only applicable to smart cards provided by Trunk Room, of which
+                $100 deposit is refundable on returning of the Smart Card upon
+                termination of this Agreement<br />*只適用於由存家寶提供之智能卡，而其中$100按金將在本協議終止後獲許可方交回智能卡時退回
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5">
+                Deposit is equivalent to License Fee payable for
+                <span class="text-bold">TWO (2)</span> months. Deposit or the
+                balance thereof shall be refunded to the Licensee upon
+                termination of this Agreement.<br />按金相等於<span
+                  class="text-bold"
+                  >兩個月</span
+                >的許可費用。按金或其餘額將在本協議終止後退回獲許可方。
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="mt-md">
+          <colgroup>
+            <col width="22%" />
+            <col width="35%" />
+            <col width="1" />
+            <col width="18%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td colspan="5" class="text-bold">
+                PLEASE READ THE “TERMS AND CONDITIONS” ATTACHED HERETO CAREFULLY
+                AS BY SIGNING THIS AGREEMENT YOU WILL BE BOUND BY THEM.<br />請細閱附件的「條款及細則」。閣下簽署本協議後，閣下將受此等條款及細則約束。
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                We agree to be bound by the terms and conditions of this
+                Agreement attached hereto<br />本人同意受附於本協議的條款及細則約束
+              </td>
+              <td class="border-right"></td>
+              <td colspan="2">
+                Confirmation on behalf of the Licensor of this Agreement<br />謹代表許可方確認承約
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+              <td class="border-right"></td>
+              <td>Name of Representative:<br />代表姓名:</td>
+              <td class="border-dashed-bottom"></td>
+            </tr>
+            <tr>
+              <td>Licensee’s Signature:<br />獲許可方簽署:</td>
+              <td class="border-dashed-bottom"></td>
+              <td class="border-right"></td>
+              <td>Signature & Chop:<br />簽署及蓋章:</td>
+              <td class="border-dashed-bottom"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="mt-lg">
+          <tbody>
+            <tr class="border-top border-bottom">
+              <td>
+                The Licensee consents to receiving all notices and
+                correspondence electronically. By consenting to this, the
+                Licensee agrees that no notices or correspondence will be sent
+                by traditional mail. It is the Licensee’s obligation to update
+                us with the Licensee’s contact details.
+                <br />
+                獲許可方同意以電子方式接收所有通知及通信，並同意所有通知及通信將不以傳統郵件形式寄送。如獲許可方之通訊方式有任何變更，獲許可方有責任通知我們。
+              </td>
+              <td><input type="checkbox" /></td>
+              <td class="text-underline text-bold">
+                Yes, I consent to electronic communication only<br />我方同意只以電子方式通信
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td>
+                The Licensor may wish to send certain marketing and promotional
+                material to the Licensee about various services that may be of
+                interest to the Licensee. Please indicate if the Licensee is
+                willing to receive such information.
+                <br />
+                許可方或會向獲許可方發送敝方可能感興趣的營銷及宣傳材料以宣傳我們的服務。請表示獲許可方是否同意接收此等資訊。
+              </td>
+              <td><input type="checkbox" /></td>
+              <td class="text-underline text-bold">
+                Yes, I consent to receiving promotional material<br />我方同意接收上述宣傳材料
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer mt-lg clearfix">
+      <table>
+        <colgroup>
+          <col width="340" />
+          <col />
+          <col width="150" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td class="border-right">
+              <h4>
+                <span class="text-primary">Trunk Room Limited</span> |
+                <span class="text-primary">存家寳有限公司</span>
+              </h4>
+              <div class="text-small mt-sm">
+                Unit 01-11，12/F，Oceanic Industrial Centre，2 Lee Lok
+                Street，Ap Lei Chau，Hong Kong
+                <br />
+                香港鴨脷洲利樂街2號灣工業貿易中心12樓01-11室
+              </div>
+            </td>
+            <td class="border-right text-center">
+              <div class="center clearFix">
+                <div>
+                  <img
+                    class="icon"
+                    style="width: 18px"
+                    src="../image/whatsapp.jpg"
+                  />
+                  <span class="text-primary">+852 9778 3278</span>
+                </div>
+                <div>
+                  <img
+                    class="icon"
+                    style="width: 26px"
+                    src="../image/phone.jpg"
+                  />
+                  <span class="text-primary">+852 2778 6708</span>
+                </div>
+                <div>
+                  <img
+                    class="icon"
+                    style="width: 22px"
+                    src="../image/fax.jpg"
+                  />
+                  <span class="text-primary">+852 2778 2308</span>
+                </div>
+                <div>
+                  <img
+                    class="icon"
+                    style="width: 24px"
+                    src="../image/email.jpg"
+                  />
+                  <span class="text-primary">ask@trunkroom.com.hk</span>
+                </div>
+                <div>
+                  <img
+                    class="icon"
+                    style="width: 24px"
+                    src="../image/root.jpg"
+                  />
+                  <span class="text-primary">www.trunkroom.com.hk</span>
+                </div>
+              </div>
+            </td>
+            <td class="text-center">
+              <img style="width: 100px" src="../image/ssaa.jpg" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

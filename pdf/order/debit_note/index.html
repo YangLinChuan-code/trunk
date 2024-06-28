@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      img {
+        display: block;
+      }
+
+      body {
+        max-width: 1110px;
+        margin: auto;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      table tr td {
+        padding: 5px 10px;
+      }
+
+      table.border tr td {
+        border: 1px solid black;
+      }
+
+      table.border-none tr td {
+        border: none;
+      }
+
+      .border-bottom {
+        border-bottom: 2px solid black;
+      }
+
+      .mt-sm {
+        margin-top: 10px;
+      }
+
+      .mt-md {
+        margin-top: 20px;
+      }
+
+      .mr-md {
+        margin-right: 20px;
+      }
+
+      .ma-md {
+        margin: 20px;
+      }
+
+      .pa-md {
+        padding: 20px;
+      }
+
+      .pl-md {
+        padding-left: 20px;
+      }
+
+      .vertical-middle {
+        vertical-align: middle;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .text-bold {
+        font-weight: bold;
+      }
+
+      .text-underline {
+        text-decoration: underline;
+      }
+
+      .bg-primary {
+        background-color: #039099;
+      }
+
+      .bg-gray {
+        background-color: rgb(212, 212, 212);
+      }
+
+      .text-white {
+        color: #fff;
+      }
+
+      .float-left {
+        float: left;
+      }
+
+      .float-right {
+        float: right;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .header .left {
+        width: 60%;
+      }
+
+      .header .left .table1 tr td {
+        padding: 30px 5px;
+      }
+
+      .header .left .table1 tr td:first-of-type {
+        width: 35%;
+      }
+
+      .header .left .table2 tr td:first-of-type {
+        width: 35%;
+      }
+
+      .header .right .logo img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header clearfix">
+      <div class="left float-left">
+        <h1>DEBIT NOTE 付款通知书</h1>
+
+        <table class="mt-md border table1">
+          <tbody>
+            <tr>
+              <td>Tel:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="mt-md border table2">
+          <tbody>
+            <tr>
+              <td>Storage Unit No.:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Client ID:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Agreement No.:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Staff ID:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Branch ID:</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="right float-right">
+        <div class="mt-md pa-md">
+          <a href="" class="logo">
+            <img src="../../logo.jpg" alt="" />
+          </a>
+        </div>
+
+        <table class="mt-md border">
+          <tbody>
+            <tr>
+              <td>Debit Note No.:</td>
+              <td>DT</td>
+            </tr>
+            <tr>
+              <td>Debit Note Date:</td>
+              <td>2023/1/16</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="content">
+      <table class="mt-md border">
+        <tr class="bg-primary text-center text-white">
+          <td>Item</td>
+          <td>Description</td>
+          <td>Unit Price</td>
+          <td>Quantity</td>
+          <td>Amount ($HKD)</td>
+          <td>Sub-Total ($HKD)</td>
+        </tr>
+        <tr>
+          <td>Storage Unit No.</td>
+          <td>ITH-0105</td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td class="text-center"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>License Period</td>
+          <td>2022-03-01 To 2022-03-31</td>
+          <td class="text-center">3720.00</td>
+          <td class="text-center">1</td>
+          <td class="text-center">3720</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Rent Free</td>
+          <td></td>
+          <td class="text-center">3720.00</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Deposit</td>
+          <td>2 months License Fee</td>
+          <td class="text-center">3720.00</td>
+          <td class="text-center">2</td>
+          <td class="text-center">7440</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Discount</td>
+          <td>Percent off %</td>
+          <td class="text-center">0.00%</td>
+          <td class="text-center">·</td>
+          <td class="text-center">0</td>
+          <td class="bg-gray">HK$ &nbsp;&nbsp;&nbsp;11160</td>
+        </tr>
+      </table>
+
+      <table class="mt-md border">
+        <tbody>
+          <tr>
+            <td class="text-bold" style="width: 70%">Payment Method</td>
+            <td class="text-right">Total Amount</td>
+            <td class="bg-gray">HK$</td>
+          </tr>
+          <tr>
+            <td rowspan="4">
+              <table class="border-none" style="width: auto">
+                <tbody>
+                  <tr>
+                    <td>-Cash</td>
+                    <td>
+                      <input class="vertical-middle" type="checkbox" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>-Cheque</td>
+                    <td><input class="vertical-middle" type="checkbox" /></td>
+                  </tr>
+                  <tr>
+                    <td>-Bank Transfer</td>
+                    <td><input class="vertical-middle" type="checkbox" /></td>
+                  </tr>
+                  <tr>
+                    <td>-EPS</td>
+                    <td><input class="vertical-middle" type="checkbox" /></td>
+                  </tr>
+                  <tr>
+                    <td>-Visa/Master</td>
+                    <td><input class="vertical-middle" type="checkbox" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="text-right">Reservation Deposit Paid</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right">Amount Paid To Date</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right">Amount Due To Date</td>
+            <td>HK$</td>
+          </tr>
+          <tr>
+            <td class="text-right">Amount Payable</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="mt-md border">
+        <tbody>
+          <tr>
+            <td colspan="3">
+              *Payment for the License Period herein stated is to be made in
+              accordance with the following schedule:
+            </td>
+          </tr>
+          <tr class="bg-primary text-white">
+            <td class="text-center">Payment Period</td>
+            <td class="text-center">Periodic Payment ($HKD)</td>
+            <td>Periodic Payment to be made on or before:</td>
+          </tr>
+          <tr>
+            <td class="text-center">xxx</td>
+            <td class="text-center">xxx</td>
+            <td>xxx</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="mt-md">
+        <h4 class="text-underline">Notes:</h4>
+        <div class="pl-md">
+          <div class="clearfix mt-sm">
+            <p class="float-left" style="width: 2%">1</p>
+            <p class="float-left" style="width: 98%">
+              All cheques should be properly crossed and made payable to "TRUNK
+              ROOM (TH) LIMITED".
+              <br />
+              支票須加劃線並註明支付「TRUNK ROOM (TH) LIMITED」。
+            </p>
+          </div>
+
+          <div class="clearfix mt-sm">
+            <p class="float-left" style="width: 2%">2</p>
+            <p class="float-left" style="width: 98%">
+              Details of the Licensor's bank accounts are as follows
+              許可方的銀行賬戶資料如下:
+              <br />
+              - Hang Seng Bank 恒生銀行: 752-031658-883
+            </p>
+          </div>
+
+          <div class="clearfix mt-sm">
+            <p class="float-left" style="width: 2%">3</p>
+            <p class="float-left" style="width: 98%">
+              Deposit shall be refunded to the Licensee's bank account as stated
+              in the License Agreement upon termination of the Agreement.
+              <br />
+              按金將在許可協議終止後退回獲許可人在許可協議上填寫的銀行戶口。
+            </p>
+          </div>
+
+          <div class="clearfix mt-sm">
+            <p class="float-left" style="width: 2%">4</p>
+            <p class="float-left" style="width: 98%">
+              A Late Payment Fee of 5% on total amount overdue will be applied
+              on any late payment, and an Administrative Fee of up to $200 may
+              also be charged on every instance of late payment.
+              <br />
+              任何遲繳的費用將會被收取相等於總欠款5%的遲繳罰金，而每次遲繳費用將有機會被收取最多$200的行政費。
+            </p>
+          </div>
+
+          <div class="clearfix mt-sm">
+            <p class="float-left" style="width: 2%">5</p>
+            <p class="float-left" style="width: 98%">
+              The License Agreement shall continues on a monthly basis after the
+              expiration of the Initial License Period until further agreed
+              between two parties or being terminated pursuant to the terms of
+              the License Agreement.
+              <br />
+              在初始許可期屆滿後，許可協議將按月繼續，直至雙方另有協議或根據許可協議的條款終止爲止。
+            </p>
+          </div>
+
+          <div class="clearfix mt-sm">
+            <p class="float-left" style="width: 2%">6</p>
+            <p class="float-left" style="width: 98%">
+              Any discount offered during the Initial License Period will not be
+              continued afterwards. Further prepayment arrangements and offers
+              maybe available after the expiry of the Initial License Period.
+              <br />
+              在初始許可期所提供的折扣將不會在期滿後延續。
+              進一步的預付安排和優惠可能會在初始許可期滿後提供。
+            </p>
+          </div>
+
+          <div class="clearfix mt-sm">
+            <p class="float-left" style="width: 2%">7</p>
+            <p class="float-left" style="width: 98%">
+              All reservation deposit paid will be forfeited if a license
+              agreement has not been executed or that outstanding payments have
+              not been settled prior to _
+              <br />
+              若閣下未能於 _
+              期前簽訂許可協議又或有應付而未付清的款項，全數預留訂金將會被沒收。
+            </p>
+          </div>
+
+          <div class="clearfix mt-sm">
+            <p class="float-left" style="width: 2%">8</p>
+            <p class="float-left" style="width: 98%">
+              The information and particulars of the License Agreement contained
+              herein shall be deemed correct and agreed unless we received your
+              written notice identifying any error for correction within 7 days
+              from the date hereof.
+              <br />
+              除非本公司在許可協議日期開始計算的7天內，收到閣下任何要求更正的書面通知，否則代表閣下確認許可協議的資料及詳情正確並同意有關協議。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix">
+        <div class="float-right" style="margin: 40px 100px 0 0">
+          <h4>Trunk Room (TH) Limited</h4>
+          <div
+            class="border-bottom text-center"
+            style="width: 200px; margin-top: 40px"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

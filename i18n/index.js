@@ -1,0 +1,1 @@
+import zhHK from"./zh-TW.js";import enUS from"./en-US.js";export default{"zh-TW":zhHK,"en-US":enUS};
